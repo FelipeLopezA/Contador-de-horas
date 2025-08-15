@@ -2,4 +2,14 @@
 <resources>
 
     <style name="Theme.ContadorHoras" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.ContadorHoras.Splash" parent="Theme.SplashScreen">
+        <!-- Fondo del splash -->
+        <item name="windowSplashScreenBackground">#FFFFFF</item>
+        <!-- Icono/animación (puede ser mipmap o anim xml) -->
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_logo_mono</item>
+        <!-- (Opcional) duración mínima del icono -->
+        <item name="windowSplashScreenAnimationDuration">400</item>
+        <!-- Tema que usará la Activity después del splash -->
+        <item name="postSplashScreenTheme">@style/Theme.ContadorHoras</item>
+    </style>
 </resources>
