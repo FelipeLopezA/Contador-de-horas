@@ -1,15 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="Theme.ContadorHoras" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
 
-    <style name="Theme.ContadorHoras" parent="android:Theme.Material.Light.NoActionBar" />
     <style name="Theme.ContadorHoras.Splash" parent="Theme.SplashScreen">
-        <!-- Fondo del splash -->
         <item name="windowSplashScreenBackground">#FFFFFF</item>
-        <!-- Icono/animación (puede ser mipmap o anim xml) -->
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_logo_mono</item>
-        <!-- (Opcional) duración mínima del icono -->
-        <item name="windowSplashScreenAnimationDuration">400</item>
-        <!-- Tema que usará la Activity después del splash -->
         <item name="postSplashScreenTheme">@style/Theme.ContadorHoras</item>
     </style>
+
+    <style name="AppCalendar" parent="@android:style/Widget.Material.CalendarView">
+        <item name="android:weekDayTextAppearance">@style/Cal_DateText</item>
+        <item name="android:dateTextAppearance">@style/Cal_DateText</item>
+
+        <item name="android:focusedMonthDateColor">@color/charcoal</item>
+        <item name="android:unfocusedMonthDateColor">@color/charcoal_40</item>
+        <item name="android:weekNumberColor">@color/charcoal</item>
+        <item name="android:selectedWeekBackgroundColor">@color/cambridge_blue</item>
+        <item name="android:weekSeparatorLineColor">@color/asparagus</item>
+    </style>
+
+    <style name="Cal_WeekDayText" parent="@android:style/TextAppearance.Material.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/charcoal</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Cal_DateText" parent="@android:style/TextAppearance.Material.Body1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/charcoal</item>
+        <!-- usa sans-serif mientras copias los TTF -->
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
 </resources>

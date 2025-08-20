@@ -2,10 +2,12 @@ package com.example.contadorhoras.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+// Paleta nueva
+val Charcoal       = Color(0xFF454851) // #454851
+val Asparagus      = Color(0xFF73956F) // #73956F
+val CambridgeBlue  = Color(0xFF7BAE7F) // #7BAE7F
+val Celadon        = Color(0xFF95D7AE) // #95D7AE
+val LavenderBlush  = Color(0xFFFCEFF9) // #FCEFF9
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+
+val OutlineDark    = Color(0x66454851) // Charcoal con ~40% alpha
